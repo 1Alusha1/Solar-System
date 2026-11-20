@@ -5,7 +5,7 @@ export const marsOrbit = new THREE.Group();
 
 export const mars = createEntity({
   radius: 6.2,
-  texturePath: "../public/2k_mars.jpg",
+  texturePath: "./2k_mars.jpg",
   roughness: 0.7,
   metalness: 0.1,
   position: {

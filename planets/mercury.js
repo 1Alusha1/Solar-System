@@ -5,7 +5,7 @@ export const mercuryOrbit = new THREE.Group();
 
 export const mercury = createEntity({
   radius: 4.5,
-  texturePath: "../public/2k_mercury.jpg",
+  texturePath: "./2k_mercury.jpg",
   metalness: 0.1,
   position: {
     x: 40,

@@ -5,7 +5,7 @@ export const jupiterOrbit = new THREE.Group();
 
 export const jupiter = createEntity({
   radius: 24.0,
-  texturePath: "../public/2k_jupiter.jpg",
+  texturePath: "./2k_jupiter.jpg",
   roughness: 0.7,
   metalness: 0.1,
   position: {

@@ -6,7 +6,7 @@ export const venushOrbit = venusOrbit;
 
 export const venus = createEntity({
   radius: 9.0,
-  texturePath: "../public/2k_venus.jpg",
+  texturePath: "./2k_venus.jpg",
   roughness: 0.7,
   metalness: 0.1,
   position: {

@@ -7,7 +7,7 @@ moonOrbit.position.set(88, 0, 0);
 
 export const moon = createEntity({
   radius: 2.6,
-  texturePath: "../public/2k_moon.jpg",
+  texturePath: "./2k_moon.jpg",
   roughness: 0.7,
   metalness: 0.1,
   position: {
@@ -19,7 +19,7 @@ export const moon = createEntity({
 
 export const earth = createEntity({
   radius: 9.8,
-  texturePath: "../public/2k_earth_daymap.jpg",
+  texturePath: "./2k_earth_daymap.jpg",
   roughness: 0.7,
   metalness: 0.1,
   position: {

@@ -17,7 +17,7 @@ ring.rotation.x = THREE.MathUtils.degToRad(115);
 
 export const saturn = createEntity({
   radius: 19.5,
-  texturePath: "../public/2k_saturn.jpg",
+  texturePath: "./2k_saturn.jpg",
   roughness: 0.7,
   metalness: 0.1,
   position: {

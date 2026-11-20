@@ -5,7 +5,7 @@ export const neptuneOrbit = new THREE.Group();
 
 export const neptune = createEntity({
   radius: 12.5,
-  texturePath: "../public/2k_neptune.jpg",
+  texturePath: "./2k_neptune.jpg",
   roughness: 0.7,
   metalness: 0.1,
   position: {
