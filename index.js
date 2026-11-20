@@ -59,6 +59,7 @@ const axesHelper = new THREE.AxesHelper(100);
 const gridHelper = new THREE.GridHelper(800, 40);
 const lightHelper = new THREE.PointLightHelper(pointLight, 35);
 
+axesHelper.visible = false;
 gridHelper.visible = false;
 lightHelper.visible = false;
 
