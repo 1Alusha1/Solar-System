@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,120 @@
     <style>
         body {
             margin: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .planet-card {
+            /* Сдвиг вправо от центра планеты (margin-left не затирается CSS2DRenderer) */
+            margin-left: 230px;
+
+            background: rgba(15, 23, 42, 0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #fff;
+            padding: 16px 20px;
+            border-radius: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 13px;
+            pointer-events: auto;
+            min-width: 250px;
+            max-width: 290px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+            user-select: none;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 8px;
+        }
+
+        .card-title {
+            margin: 0;
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .card-subtitle {
+            font-size: 12px;
+            color: #94a3b8;
+            font-weight: 400;
+        }
+
+        .card-type {
+            font-size: 11px;
+            color: #38bdf8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 3px;
+            font-weight: 600;
+        }
+
+        .card-close {
+            background: none;
+            border: none;
+            color: #94a3b8;
+            cursor: pointer;
+            font-size: 15px;
+            padding: 2px 6px;
+            line-height: 1;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .card-close:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .card-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            font-size: 12px;
+        }
+
+        .card-row span {
+            color: #94a3b8;
+        }
+
+        .card-row b {
+            color: #f1f5f9;
+            font-weight: 500;
+        }
+
+        .card-fact {
+            margin-top: 10px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 11.5px;
+            line-height: 1.45;
+            color: #cbd5e1;
+            font-style: italic;
+        }
+
+        /* Минималистичная, аккуратная подпись */
+        .lable,
+        .label {
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 2px 8px;
+            background: rgba(0, 0, 0, 0.55);
+            border-radius: 4px;
+            pointer-events: none;
+            user-select: none;
+            white-space: nowrap;
         }
     </style>
 </head>
+
 <body>
 
     <script src="index.js" type="module"></script>
